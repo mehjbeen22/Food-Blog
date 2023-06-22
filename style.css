@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200&family=Crimson+Text&family=EB+Garamond&family=Kalam:wght@300&family=Libre+Baskerville&family=Mate&family=Merriweather:wght@900&family=Poltawski+Nowy&family=Red+Hat+Display:wght@300&family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bitter', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mate', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --primary-color:   #FFFFFF;
+    --text-color: #000;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ---------------------- Cantainer Editing---------------------------- */
+.main-cantainer{
+    margin-top: 80px;
+    /* background-color: lightgoldenrodyellow; */
+    height: 100%;
+    width: 100%;
+}
+
+.margin-box{
+    /* border: 2px solid blue; */
+    width: 90%;
+    margin: 7rem auto;
+}
+
+/* --------------------------- NAVBAR ------------------------------- */
+.navbar{
+    background-color: white;
+    /* border: 2px solid black ; */
+    height: 4rem;
+    padding-inline: 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    
+}
+.nav-item{
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    /* border: 2px solid rosybrown; */
+}
+
+.hum-icon{
+    /* border: 2px solid blue; */
+    padding-block: 20px;
+    padding-inline: 10px;
+    
+}
+
+.humburger{
+    height: 1.3rem;
+}
+
+.hum-icon:hover{
+    background-color: #ccc;
+}
+.nav-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ------------------------------ First Food Block------------------------ */
+.food-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    /* background-color: pink; */
+    padding: 10px;
+    
+}
+
+.food-gallery-items{
+    /* background-color: salmon; */
+    height: 34rem;
+}
+
+.gallery-img{
+    height: 25rem;
+    width: 100%;
+}
+
+.gallery-content{
+    height: 9rem;
+}
+
+
+.gallery-content h2{
+    text-align: center;
+}
+
+.gallery-content p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* ------------------------------ PAGINATION BLOCK ------------------------------------- */
+
+.pagination{
+    border-bottom: 1px solid  #ccc;;
+    margin-block: 10px;
+    height: 4rem;
+    padding: 3.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-button{
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#pg-btn-1{
+    color: white;
+    background-color:black;
+}
+
+.page-button:hover{
+    color: white;
+    background-color:black;
+}
+
+#pg-btn-1:hover{
+    color: white;
+    background-color: #ccc;
+}
+
+
+/* ------------------------------ SECOND CANTAINER -------------------------------- */
+.about-me-box{
+    border-bottom: 1px solid #ccc;
+    height: 57rem;
+}
+
+
+.about-cantainer{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin:  auto;
+    height: rem;
+}
+.heading{
+   display: inline-block;
+   margin-block: 10px;
+   margin-inline: 20rem;
+   /* border: 1px solid #000; */
+   padding: 10px;
+}
+
+
+
+.chef-image{
+    margin-inline: 70px;
+    margin-top: 1rem;
+    width: 90%;
+
+}
+
+
+.content-box{
+    /* border: 2px solid brown; */
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.head{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.head1{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.body-content{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-style: italic;
+   
+}
+
+
+/* ----------------------- FOOTER BLOCK---------------------------------- */
+.footer-box{
+    height:17 rem;
+    /* background-color: var(--last-background-color); */
+    }
+    .footer-item{
+        height:15rem;
+        margin:15px;
+        /* border: 2px dashed green; */
+        width:50%;
+        color: black;
+    }
+    
+    .footer-item h2{
+        margin-block: 0.8rem;
+        color: black;
+    }
+    
+    .blog{
+        /* border: 2px solid black; */
+        height: 5rem;
+        padding: 5px;
+    }
+    
+    .blog:hover{
+        background-color: #C0C0C0;
+    }
+    
+    #border{
+        border-bottom: 2px solid #C0C0C0;
+    }
+    .blog img{
+        height:4rem;
+        padding:5px;
+    }
+    .blog-content{
+        padding:5px;
+        color: black;
+    }
+    
+    .footer-grid{
+        display:grid;
+        height:5rem;
+        grid-template-columns: auto auto auto auto auto;
+        gap:3px;
+        row-gap: 15px;
+    }
+    
+    .fgrid-item{
+        /* border: 2px solid black; */
+        background-color: darkgray;
+        height: 20px;
+        text-align: center;
+        color:black;
+    }
+    
+    #New{
+        background-color:black;
+        color: white;
+        height:25px;
+    }
+    
